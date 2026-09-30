@@ -1,0 +1,15 @@
+label,url,notes
+0,https://www.example.com/about,benign documentation page
+0,https://school.edu/events/club,benign school page
+0,https://library.example.org/search?q=security,benign search page
+0,https://shop.example.com/products/blue-notebook,benign product page
+0,https://news.example.org/2026/09/cyber-club,benign article
+0,https://portal.example.edu/login,benign-looking portal
+1,http://192.0.2.10/login,documentation IP used as suspicious example
+1,http://account-verify.example/login?session=8a7f&redirect=bank,synthetic suspicious pattern
+1,http://secure-login.example.com@evil.example/reset,at-symbol deception pattern
+1,http://verify-user.example.net/update/password,synthetic credential lure
+1,http://x.example/a/b/c/d/e/f/g/h/i/j/k/l,many path segments
+1,http://tiny.example/r/9Fz2,synthetic shortened-looking path
+0,https://long.example.org/research/2026/security/observability/report,benign but long URL
+1,http://support.example.biz/urgent-account-verification,synthetic urgency pattern
