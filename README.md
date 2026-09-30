@@ -36,3 +36,10 @@ This experiment is intentionally modest. A useful next step would be to evaluate
 ## Safety
 
 The examples are synthetic. Do not test URLs against systems you do not own or have permission to assess.
+## Project reflection
+
+- **What I personally implemented:** I wrote the lexical feature extractor, the weighted risk-scoring algorithm, the prediction threshold, the benchmark metrics, the synthetic labeled dataset, and the unit tests.
+- **One actual result:** On the 14-example dataset, the detector reached **85.7% accuracy, 100.0% precision, and 71.4% recall**; all **3 tests passed**.
+- **One unexpected result:** The detector missed suspicious-looking examples with many path segments or a shortened-looking path, showing that an intuitive signal is not automatically a useful signal in a small rule system.
+- **One limitation:** This result cannot establish real-world phishing-detection performance because the dataset is small, synthetic, and not evaluated on live or time-separated URLs.
+- **Next iteration:** I intend to evaluate a larger licensed dataset with a time-based split and compare the rules against logistic regression while keeping an error-analysis table.
